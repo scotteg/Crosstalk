@@ -17,9 +17,9 @@
 		D2DA94922406B93C00468CC7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94912406B93C00468CC7 /* User.swift */; };
 		D2DA94942406B94300468CC7 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94932406B94300468CC7 /* ChatViewModel.swift */; };
 		D2DA94962406B98500468CC7 /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94952406B98500468CC7 /* DateFormatter+.swift */; };
-		D2DA94A82407E02C00468CC7 /* ChatScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94A72407E02C00468CC7 /* ChatScrollView.swift */; };
 		D2DA94AA2407E03800468CC7 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94A92407E03800468CC7 /* ToolbarView.swift */; };
 		D2DA94AC2407E1DC00468CC7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94AB2407E1DC00468CC7 /* MessageView.swift */; };
+		D2DA94AE2407E5B900468CC7 /* ReversibleChatScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94AD2407E5B900468CC7 /* ReversibleChatScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		D2DA94912406B93C00468CC7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D2DA94932406B94300468CC7 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		D2DA94952406B98500468CC7 /* DateFormatter+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
-		D2DA94A72407E02C00468CC7 /* ChatScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatScrollView.swift; sourceTree = "<group>"; };
 		D2DA94A92407E03800468CC7 /* ToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		D2DA94AB2407E1DC00468CC7 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		D2DA94AD2407E5B900468CC7 /* ReversibleChatScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleChatScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +116,9 @@
 		D2DA948D2406B8F100468CC7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D2DA94A72407E02C00468CC7 /* ChatScrollView.swift */,
 				D2DA947A2406B7DE00468CC7 /* ContentView.swift */,
 				D2DA94AB2407E1DC00468CC7 /* MessageView.swift */,
+				D2DA94AD2407E5B900468CC7 /* ReversibleChatScrollView.swift */,
 				D2DA94A92407E03800468CC7 /* ToolbarView.swift */,
 			);
 			path = Views;
@@ -208,12 +208,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2DA94772406B7DE00468CC7 /* AppDelegate.swift in Sources */,
-				D2DA94A82407E02C00468CC7 /* ChatScrollView.swift in Sources */,
 				D2DA94AA2407E03800468CC7 /* ToolbarView.swift in Sources */,
 				D2DA94902406B93200468CC7 /* Message.swift in Sources */,
 				D2DA94AC2407E1DC00468CC7 /* MessageView.swift in Sources */,
 				D2DA94792406B7DE00468CC7 /* SceneDelegate.swift in Sources */,
 				D2DA94962406B98500468CC7 /* DateFormatter+.swift in Sources */,
+				D2DA94AE2407E5B900468CC7 /* ReversibleChatScrollView.swift in Sources */,
 				D2DA94922406B93C00468CC7 /* User.swift in Sources */,
 				D2DA94942406B94300468CC7 /* ChatViewModel.swift in Sources */,
 				D2DA947B2406B7DE00468CC7 /* ContentView.swift in Sources */,
