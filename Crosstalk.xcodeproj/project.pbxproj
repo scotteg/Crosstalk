@@ -13,6 +13,10 @@
 		D2DA947D2406B7E100468CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DA947C2406B7E100468CC7 /* Assets.xcassets */; };
 		D2DA94802406B7E100468CC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DA947F2406B7E100468CC7 /* Preview Assets.xcassets */; };
 		D2DA94832406B7E100468CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DA94812406B7E100468CC7 /* LaunchScreen.storyboard */; };
+		D2DA94902406B93200468CC7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA948F2406B93200468CC7 /* Message.swift */; };
+		D2DA94922406B93C00468CC7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94912406B93C00468CC7 /* User.swift */; };
+		D2DA94942406B94300468CC7 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94932406B94300468CC7 /* ChatViewModel.swift */; };
+		D2DA94962406B98500468CC7 /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94952406B98500468CC7 /* DateFormatter+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		D2DA947F2406B7E100468CC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2DA94822406B7E100468CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2DA94842406B7E100468CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2DA948F2406B93200468CC7 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		D2DA94912406B93C00468CC7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D2DA94932406B94300468CC7 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		D2DA94952406B98500468CC7 /* DateFormatter+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +64,11 @@
 		D2DA94752406B7DE00468CC7 /* Crosstalk */ = {
 			isa = PBXGroup;
 			children = (
-				D2DA94762406B7DE00468CC7 /* AppDelegate.swift */,
-				D2DA94782406B7DE00468CC7 /* SceneDelegate.swift */,
-				D2DA947A2406B7DE00468CC7 /* ContentView.swift */,
-				D2DA947C2406B7E100468CC7 /* Assets.xcassets */,
-				D2DA94812406B7E100468CC7 /* LaunchScreen.storyboard */,
-				D2DA94842406B7E100468CC7 /* Info.plist */,
-				D2DA947E2406B7E100468CC7 /* Preview Content */,
+				D2DA948A2406B89F00468CC7 /* App */,
+				D2DA948B2406B8D500468CC7 /* Models */,
+				D2DA948C2406B8E500468CC7 /* View Models */,
+				D2DA948D2406B8F100468CC7 /* Views */,
+				D2DA948E2406B8FE00468CC7 /* Supporting Files */,
 			);
 			path = Crosstalk;
 			sourceTree = "<group>";
@@ -73,6 +79,52 @@
 				D2DA947F2406B7E100468CC7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2DA948A2406B89F00468CC7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D2DA94762406B7DE00468CC7 /* AppDelegate.swift */,
+				D2DA94782406B7DE00468CC7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D2DA948B2406B8D500468CC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2DA948F2406B93200468CC7 /* Message.swift */,
+				D2DA94912406B93C00468CC7 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2DA948C2406B8E500468CC7 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2DA94932406B94300468CC7 /* ChatViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D2DA948D2406B8F100468CC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2DA947A2406B7DE00468CC7 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2DA948E2406B8FE00468CC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2DA947C2406B7E100468CC7 /* Assets.xcassets */,
+				D2DA94952406B98500468CC7 /* DateFormatter+.swift */,
+				D2DA94812406B7E100468CC7 /* LaunchScreen.storyboard */,
+				D2DA94842406B7E100468CC7 /* Info.plist */,
+				D2DA947E2406B7E100468CC7 /* Preview Content */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2DA94772406B7DE00468CC7 /* AppDelegate.swift in Sources */,
+				D2DA94902406B93200468CC7 /* Message.swift in Sources */,
 				D2DA94792406B7DE00468CC7 /* SceneDelegate.swift in Sources */,
+				D2DA94962406B98500468CC7 /* DateFormatter+.swift in Sources */,
+				D2DA94922406B93C00468CC7 /* User.swift in Sources */,
+				D2DA94942406B94300468CC7 /* ChatViewModel.swift in Sources */,
 				D2DA947B2406B7DE00468CC7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
