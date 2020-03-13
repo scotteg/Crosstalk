@@ -28,7 +28,7 @@ struct ReversibleChatScrollView: View {
         GeometryReader { geometry in
             VStack {
                 ForEach(self.viewModel.messages) {
-                    MessageView(message: $0)
+                    MessageView(message: $0, isTranslating: self.$viewModel.isTranslating)
                 }
             }
             .modifier(ViewHeightKey())

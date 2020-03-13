@@ -21,7 +21,7 @@ struct ToolbarView: View {
             }
             .padding(.horizontal, 8)
             
-            TextField(viewModel.appState.notConnected ? "Inactive" : "Add message",
+            TextField(viewModel.appState.notConnected ? "\(viewModel.appState.rawValue)" : "Add message",
                       text: $viewModel.newMessageText)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .disabled(viewModel.appState.notConnected)

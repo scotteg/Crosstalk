@@ -10,19 +10,28 @@ import SwiftUI
 
 struct MessageView: View {
     let message: Message
+    @Binding var isTranslating: Bool
     
     var body: some View {
         VStack {
             Text(self.caption(for: message))
+                .multilineTextAlignment(.center)
                 .font(.caption)
                 .foregroundColor(.gray)
+                .onTapGesture {
+                    if self.isTranslating,
+                        self.message.isTranslated {
+                        let url = URL(string: "http://translate.yandex.com")!
+                        UIApplication.shared.open(url)
+                    }
+            }
             
             HStack {
                 if message.isFromLocalUser {
                     Spacer()
                 }
                 
-                Text(message.value)
+                Text(self.text(for: message))
                     .foregroundColor(.white)
                     .font(.body)
                     .padding()
@@ -39,7 +48,23 @@ struct MessageView: View {
         }
     }
     
+    private func text(for message: Message) -> String {
+        isTranslating && message.translatedValue.isEmpty == false ? message.translatedValue : message.value
+    }
+    
     private func caption(for message: Message) -> String {
-        (message.isFromLocalUser ? "" : "\(message.username) - ") + "\(message.timestamp)"
+        var caption = ""
+        
+        switch (message.isFromLocalUser, isTranslating) {
+        case (true, _):
+            caption = message.timestamp
+        case (_, true) where message.isTranslated:
+            caption = "\nTranslation Powered by Yandex.Translate"
+            fallthrough
+        default:
+            caption = "\(message.username) — \(message.timestamp)" + caption
+        }
+        
+        return caption
     }
 }

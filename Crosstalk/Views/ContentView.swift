@@ -58,6 +58,11 @@ struct ContentView: View {
             ]
         default:
             buttons += [
+                .default(Text(viewModel.isTranslating ?
+                    "Stop Translating" :
+                    "Start Translating to Dutch")) {
+                        self.viewModel.isTranslating.toggle()
+                },
                 .default(Text("Disconnect")) {
                     self.viewModel.disconnect()
                 }
