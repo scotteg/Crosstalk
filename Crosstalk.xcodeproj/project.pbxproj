@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21F59C42434CC0400DDD1A0 /* ChatScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21F59C32434CC0300DDD1A0 /* ChatScrollView.swift */; };
 		D2DA94772406B7DE00468CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94762406B7DE00468CC7 /* AppDelegate.swift */; };
 		D2DA94792406B7DE00468CC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94782406B7DE00468CC7 /* SceneDelegate.swift */; };
 		D2DA947B2406B7DE00468CC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA947A2406B7DE00468CC7 /* ContentView.swift */; };
@@ -19,12 +20,12 @@
 		D2DA94962406B98500468CC7 /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94952406B98500468CC7 /* DateFormatter+.swift */; };
 		D2DA94AA2407E03800468CC7 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94A92407E03800468CC7 /* ToolbarView.swift */; };
 		D2DA94AC2407E1DC00468CC7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94AB2407E1DC00468CC7 /* MessageView.swift */; };
-		D2DA94AE2407E5B900468CC7 /* ReversibleChatScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94AD2407E5B900468CC7 /* ReversibleChatScrollView.swift */; };
 		D2DA94B02407E80F00468CC7 /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94AF2407E80F00468CC7 /* TranslationResponse.swift */; };
 		D2DA94B32407EA7400468CC7 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DA94B22407EA7400468CC7 /* TranslationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D21F59C32434CC0300DDD1A0 /* ChatScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatScrollView.swift; sourceTree = "<group>"; };
 		D2DA94732406B7DE00468CC7 /* Crosstalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crosstalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DA94762406B7DE00468CC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2DA94782406B7DE00468CC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		D2DA94952406B98500468CC7 /* DateFormatter+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
 		D2DA94A92407E03800468CC7 /* ToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		D2DA94AB2407E1DC00468CC7 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		D2DA94AD2407E5B900468CC7 /* ReversibleChatScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleChatScrollView.swift; sourceTree = "<group>"; };
 		D2DA94AF2407E80F00468CC7 /* TranslationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationResponse.swift; sourceTree = "<group>"; };
 		D2DA94B22407EA7400468CC7 /* TranslationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,9 +122,9 @@
 		D2DA948D2406B8F100468CC7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D21F59C32434CC0300DDD1A0 /* ChatScrollView.swift */,
 				D2DA947A2406B7DE00468CC7 /* ContentView.swift */,
 				D2DA94AB2407E1DC00468CC7 /* MessageView.swift */,
-				D2DA94AD2407E5B900468CC7 /* ReversibleChatScrollView.swift */,
 				D2DA94A92407E03800468CC7 /* ToolbarView.swift */,
 			);
 			path = Views;
@@ -223,11 +223,11 @@
 			files = (
 				D2DA94772406B7DE00468CC7 /* AppDelegate.swift in Sources */,
 				D2DA94AA2407E03800468CC7 /* ToolbarView.swift in Sources */,
+				D21F59C42434CC0400DDD1A0 /* ChatScrollView.swift in Sources */,
 				D2DA94902406B93200468CC7 /* Message.swift in Sources */,
 				D2DA94AC2407E1DC00468CC7 /* MessageView.swift in Sources */,
 				D2DA94792406B7DE00468CC7 /* SceneDelegate.swift in Sources */,
 				D2DA94962406B98500468CC7 /* DateFormatter+.swift in Sources */,
-				D2DA94AE2407E5B900468CC7 /* ReversibleChatScrollView.swift in Sources */,
 				D2DA94922406B93C00468CC7 /* User.swift in Sources */,
 				D2DA94B02407E80F00468CC7 /* TranslationResponse.swift in Sources */,
 				D2DA94942406B94300468CC7 /* ChatViewModel.swift in Sources */,

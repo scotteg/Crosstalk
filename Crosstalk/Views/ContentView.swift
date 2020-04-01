@@ -19,15 +19,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                ReversibleChatScrollView(colorScheme: colorScheme, reversed: true, scrollToEnd: true)
-                    .offset(y: viewModel.keyboardOffset + viewModel.safeAreaInsetBottom)
+                ChatScrollView()
                 
                 ToolbarView(showActionSheet: $showActionSheet)
                     .padding()
-                    .padding(.bottom, viewModel.safeAreaInsetBottom)
-                    .edgesIgnoringSafeArea(.bottom)
                     .background(colorScheme == .dark ? Color.black : Color.white)
-                    .offset(y: viewModel.keyboardOffset + viewModel.safeAreaInsetBottom)
+                    .offset(y: viewModel.keyboardOffset)
                     .animation(.easeInOut(duration: viewModel.keyboardAnimationDuration))
             }
             .animation(.easeInOut)

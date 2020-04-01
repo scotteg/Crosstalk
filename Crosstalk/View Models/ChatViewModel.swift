@@ -47,7 +47,6 @@ final class ChatViewModel: NSObject, ObservableObject {
     
     var timestamp: String { formatter.string(from: Date()) }
     var newMessageTextIsEmpty: Bool { newMessageText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
-    var safeAreaInsetBottom: CGFloat { UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.safeAreaInsets.bottom ?? 0 }
     let translationLanguageCode = "nl"
     var actionSheetTitle = "Actions"
     
@@ -151,7 +150,7 @@ final class ChatViewModel: NSObject, ObservableObject {
     
     private func insert(message: Message) {
         DispatchQueue.main.async { [weak self] in
-            self?.messages.append(message)
+            self?.messages.insert(message, at: 0)
         }
     }
 }
